@@ -1,0 +1,4098 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>University</title>
+  <meta name="viewport" content="with=device-width, initial-scale=1.0">
+  <title> University Website Design</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v3.0.6/css/line.css">
+  
+  
+  <style>
+  *{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(https://xr3d.com/wp-content/uploads/2016/02/Wk_08_2016.jpg);
+  background-position:center;
+  background-size:cover;
+  position:relative;
+}
+nav{
+  display:flex;
+  padding:2% 6%;
+  justify-content:space-between;
+  align-items:center;
+}
+nav img{
+  width:150px:
+}
+.nav-links{
+  flex:1;
+  text-align:right;
+}
+.nav-links ul li {
+  list-style:none;
+  display:inline-block;
+  padding:8px 12px;
+  position: relative;
+}
+.nav-links ul li a {
+  color:#fff;
+  text-decoration:none;
+  font-size: 13px;
+}
+.nav-links ul li::after{
+  content:'';
+  width:0%;
+  height:2px;
+  background:#f44336;
+  display:block;
+  margin:auto;
+  transition:0.5s;
+}
+.nav-links ul li:hover::after{
+  width:100%;
+}
+.text-box{
+  width:90%;
+  color:#fff;
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  text-align:center;
+}
+.text-box h1 {
+  font-size:62px;
+}
+.text-box p{
+  margin:10px 0 40px;
+  font-size:14px;
+  color:#fff;
+}
+.heroo-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid ;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.heroo-btn:hover{
+   
+    border:1px solid #f44336;
+    background:#f44336;
+    transition: 0.5s;
+}
+  
+   .red-btn{
+border: 1px solid #f44336;
+background: transparent;
+color: #f44336;
+     
+   }
+  .red-btn:hover{
+    color:#fff;
+    
+  }
+  
+  
+  
+  .hero-bttn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid ;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero-bttn:hover{
+   
+    border:1px solid #f44336;
+    background:#f44336;
+    transition: 0.5s;
+}
+  
+  
+  
+  
+  
+  
+  
+nav .fa{
+  display:none;
+}
+@media(max-width: 700px){
+  .text-box h1{
+    font-size:20px;
+  }
+  .nav-links ul li{
+    display:block;
+  }
+  .nav-links{
+    position:absolute;
+    background:#f44336;
+    height:100vh;
+    width:200px;
+    top:0;
+    right:-200px;
+    text-align:left;
+    z-index:2;
+    transition:1s;
+  }
+  nav .fa{
+    display:block;
+    color:#fff;
+    margin:10px;
+    font-size: 22px;
+    cursor:pointer;    
+  }
+  .nav-links ul{
+    padding:30px;
+  }
+}
+  
+  
+  
+  
+  
+
+.course{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+h1{
+  font-size:36px;
+  font-weight:600;
+}
+p{
+  color:#777;
+  font-size:14px;
+  font-weight:600;
+  line-height:22px;
+  padding:10px;
+}
+.row{
+  margin-top:5%;
+  display:flex;
+  justify-content:space-between;
+}
+.course-col{
+  flex-basis:31%;
+  background:#fff3f3;
+  border-radius:10px;
+  margin-bottom:5%;
+  padding:20px 12px;
+  box-sizing:border-box;
+}
+h3{
+  text-align:center;
+  font-weight:600;
+  margin:10px 0;
+}
+.course-col:hover{
+  box-shadow:0 0 20px 0px rgba(0,0,0,0.2);
+}
+@media(max-width: 700px){
+  .row{
+    flex-direction:column;
+  }
+}
+.campus{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:50px;
+}
+.campus-col{
+  flex-basis:32%;
+  border-radius:10px;
+  margin-bottom:30px;
+  position:relative;
+  overflow:hidden;
+}
+.campus-col img {
+  width:100%;
+  display:block;
+}
+.layer{
+  background: transparent;
+  height:100%;
+  width:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  transition:0.5s;
+}
+.layer:hover{
+  background: rgba(226,0,0,0.7);
+}
+.layer h3{
+  width:100%;
+  font-weight:500;
+  color:#fff;
+  font-size:26px;
+  bottom:0;
+  left:50%;
+  transform: translateX(-50%);
+  position:absolute;
+  opacity:0;
+  transition:0.5s;
+}
+.layer:hover h3 {
+  bottom:39%;
+  opacity:1;
+}
+.facilities{
+  width:80%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+.facilities-col{
+  flex-basis:31%;
+  border-radius:10px;
+  margin-bottom:5%;
+  text-align:left;
+}
+.facilities-col img{
+  width:100%;
+  height:200px;
+  border-radius:10px;
+}
+.facilities-col p{
+  padding0;
+}
+.facilities-col h3{
+  margin-top:16px;
+  margin-bottom:15px;
+  text-align:left;
+}
+  
+  
+  
+  
+  
+  
+  
+.testimonials{
+  width:90%;
+  margin:auto;
+  text-align:center;
+  padding-top:100px;
+}
+.testimonials-col{
+  flex-basis:44%;
+  border-radius:10px;
+  margin-bottom:5%;
+  text-align:left;
+  background:#fff3f3;
+  padding:25px;
+  cursor:pointer;
+  display:flex;
+}
+.testimonials-col img {
+  height:40px;
+  width:40px;
+  margin-left:5px;
+  margin-right:30px;
+  border-radius:50%;
+}
+.testimonials-col p{
+  padding:0;
+}
+.testimonials-col h3{
+  margin-top:15px;
+  text-align:left;
+}
+.testimonials-col .fa{
+  color:#f44336;
+}
+@media(max-width:700px){
+  .testimonial-col img {
+    margin-left:0px;
+    marting-right:15px;
+  }
+}
+  
+  
+  
+.coontainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px 50px;
+    padding: 100px 50px;
+}
+
+.coontainer .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 350px;
+    max-width: 100%;
+    height: 300px;
+    background: white;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+}
+
+.coontainer .card:hover {
+    height: 400px;
+}
+
+.coontainer .card .img-box {
+    position: absolute;
+    top: 20px;
+    width: 300px;
+    height: 220px;
+    background: #333;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.coontainer .card:hover .img-box {
+    top: -100px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.coontainer .card .img-box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.coontainer .card .content {
+    position: absolute;
+    top: 252px;
+    width: 100%;
+    height: 35px;
+    padding: 0 30px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.coontainer .card:hover .content {
+    top: 130px;
+    height: 250px;
+}
+
+.coontainer .card .content h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--clr);
+}
+
+.coontainer .card .content p {
+    color: #333;
+}
+
+.coontainer .card .content a {
+    position: relative;
+    top: 15px;
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    background: var(--clr);
+    color: white;
+    font-weight: 500;
+}
+
+.coontainer .card .content a:hover {
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .coontainer .card {
+        width: 230px;
+        border-radius: 15px;
+    }
+
+    .coontainer .card .img-box {
+        width: 185px;
+        border-radius: 10px;
+    }
+
+    .coontainer .card .content p {
+        font-size: 0.8rem;
+    }
+
+    .coontainer .card .content a {
+        font-size: 0.9rem;
+    }
+}
+
+  .o-video {
+    
+    width: 100%;
+  user-select: none;
+  overflow: hidden;
+  max-width: 1000px;
+  border-radius: 15px;
+  background: #000;
+  aspect-ratio: 16 / 9;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+
+  
+  height: 0;
+  position: relative;
+  padding-top: 56.25%; /* 9 / 16 * 100 */
+}
+  
+.o-video > iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 0;
+}
+  
+  
+  
+  .article {
+  border-radius: 5px;
+  box-shadow: 0 0 10px #d3d3d3;
+  margin: 20px auto 0;
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  min-height: 400px;
+}
+
+.article__image {
+  width: 90%;
+  height: 240px;
+  object-fit: cover;
+ 
+border-radius: 10px;
+}
+
+.article__wrapper {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.article__title {
+  font-size: 26px;
+  font-weight: 700;
+  text-align: center;
+  padding: 10px 0 0;
+  margin: 0;
+}
+
+.article__text {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.2;
+  padding: 10px 0 15px;
+  margin: 0;
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+.cta{
+  margin: 100px auto;
+  width: 80%;
+  background-image:url(https://i.ibb.co/ZcdvVM6/IMG-20240407-145033.jpg);
+  background-position:center;
+  background-size:cover;
+  border-radius:10px;
+  text-align:center;
+  padding:100px 0;
+}
+.cta h1{
+  color:#fff;
+  margin-bottom:40px;
+  padding:0; 
+}
+@media(max-width:700px){
+  .cta h1{
+    font-size:24px;
+  }
+}
+  
+  
+  
+
+footer{
+  position: relative;
+  background: #140B5C;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+footer::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100px;
+  height: 1px;
+  width: 100%;
+  background: #AFAFB6;
+}
+footer .contentt{
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+footer .contentt .top{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+.contentt .top .logo-details{
+  color: #fff;
+  font-size: 30px;
+}
+.contentt .top .media-icons{
+  display: flex;
+}
+.contentt .top .media-icons a{
+  height: 50px;
+  width: 50px;
+  margin: 0 8px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  color: #fff;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.4s ease;
+}
+.top .media-icons a:nth-child(1){
+  background: #4267B2;
+}
+.top .media-icons a:nth-child(1):hover{
+  color: #4267B2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(2){
+  background: #1DA1F2;
+}
+.top .media-icons a:nth-child(2):hover{
+  color: #1DA1F2;
+  background: #fff;
+}
+.top .media-icons a:nth-child(3){
+  background: #E1306C;
+}
+.top .media-icons a:nth-child(3):hover{
+  color: #E1306C;
+  background: #fff;
+}
+.top .media-icons a:nth-child(4){
+  background: #0077B5;
+}
+.top .media-icons a:nth-child(4):hover{
+  color: #0077B5;
+  background: #fff;
+}
+.top .media-icons a:nth-child(5){
+  background: #FF0000;
+}
+.top .media-icons a:nth-child(5):hover{
+  color: #FF0000;
+  background: #fff;
+}
+footer .contentt .link-boxes{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+footer .contentt .link-boxes .box{
+  width: calc(100% / 5 - 10px);
+}
+.contentt .link-boxes .box .link_name{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.contentt .link-boxes .box li{
+  margin: 6px 0;
+  list-style: none;
+}
+.contentt .link-boxes .box li a{
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease
+}
+.contentt .link-boxes .box li a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.contentt .link-boxes .input-box{
+  margin-right: 55px;
+}
+.link-boxes .input-box input{
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #AFAFB6;
+  background: #140B5C;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: #fff;
+  margin-top: 5px;
+}
+.link-boxes .input-box input::placeholder{
+  color: #AFAFB6;
+  font-size: 16px;
+}
+.link-boxes .input-box input[type="submit"]{
+  background: #fff;
+  color: #140B5C;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.input-box input[type="submit"]:hover{
+  opacity: 1;
+}
+footer .bottom-details{
+  width: 100%;
+  background: #0F0844;
+}
+footer .bottom-details .bottom_text{
+  max-width: 1250px;
+  margin: auto;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.bottom-details .bottom_text span,
+.bottom-details .bottom_text a{
+  font-size: 14px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.8;
+  text-decoration: none;
+}
+.bottom-details .bottom_text a:hover{
+  opacity: 1;
+  text-decoration: underline;
+}
+.bottom-details .bottom_text a{
+  margin-right: 10px;
+}
+@media (max-width: 900px) {
+  footer .contentt .link-boxes{
+    flex-wrap: wrap;
+  }
+  footer .contentt .link-boxes .input-box{
+    width: 40%;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 700px){
+  footer{
+    position: relative;
+  }
+  .contentt .top .logo-details{
+    font-size: 26px;
+  }
+  .contentt .top .media-icons a{
+    height: 35px;
+    width: 35px;
+    font-size: 14px;
+    line-height: 35px;
+  }
+  footer .contentt .link-boxes .box{
+    width: calc(100% / 3 - 10px);
+  }
+  footer .contentt .link-boxes .input-box{
+    width: 60%;
+  }
+  
+  .bottom-details .bottom_text span,
+  .bottom-details .bottom_text a{
+    font-size: 12px;
+  }
+}
+@media (max-width: 520px){
+  footer::before{
+    top: 145px;
+  }
+  footer .contentt .top{
+    flex-direction: column;
+  }
+  .contentt .top .media-icons{
+    margin-top: 16px;
+  }
+  footer .contentt .link-boxes .box{
+    width: calc(100% / 2 - 10px);
+  }
+  footer .contentt .link-boxes .input-box{
+    width: 100%;
+  }
+}
+  
+  
+  
+  
+
+
+
+  
+  
+  
+ .rag{
+    position:fixed;
+    bottom:48px;
+    right:20px;
+   text-align:right;
+   z-index:10;
+  }
+  
+  
+  
+  
+  .wrapper{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  animation: show_toast 1s ease forwards;
+}
+@keyframes show_toast {
+  0%{
+    transform: translateX(-100%);
+  }
+  40%{
+    transform: translateX(10%);
+  }
+  80%, 100%{
+    transform: translateX(20px);
+  }
+}
+.wrapper.hide{
+  animation: hide_toast 1s ease forwards;
+}
+@keyframes hide_toast {
+  0%{
+    transform: translateX(20px);
+  }
+  40%{
+    transform: translateX(10%);
+  }
+  80%, 100%{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+  }
+}
+.wrapper .toast{
+  background: #fff;
+  padding: 20px 15px 20px 20px;
+  border-radius: 10px;
+  border-left: 5px solid #2ecc71;
+  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .toast.offline{
+  border-color: #ccc;
+}
+.toast .content{
+  display: flex;
+  align-items: center;
+}
+.content .icon{
+  font-size: 25px;
+  color: #fff;
+  height: 50px;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  background: #2ecc71;
+}
+.toast.offline .content .icon{
+  background: #ccc;
+}
+.content .details{
+  margin-left: 15px;
+}
+.details span{
+  font-size: 20px;
+  font-weight: 500;
+}
+.details p{
+  color: #878787;
+}
+.toast .close-icon{
+  color: #878787;
+  font-size: 23px;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #f2f2f2;
+  transition: all 0.3s ease;
+}
+.close-icon:hover{
+  background: #efefef;
+}
+  
+    :root {
+  --primary-color: slategrey;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+.carousel-container {
+  border-radius: 30px;
+  overflow: hidden;
+  max-width: 800px;
+  position: relative;
+  box-shadow: 0 0 30px -20px #223344;
+  margin: auto;
+  z-index: 0;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+.mySlides img {
+  display: block;
+  width: 100%;
+}
+
+/* image gradient overlay [optional] */
+/*  .mySlides::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+    background-image: linear-gradient(-45deg, rgba(110, 0, 255, .1), rgba(70, 0, 255, .2));
+} */
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: auto;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0 8px 8px 0;
+  background: rgba(173, 216, 230, 0.1);
+  user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 8px 0 0 8px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(173, 216, 230, 0.3);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  background-color: rgba(10, 10, 20, 0.1);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.number {
+  color: #f2f2f2;
+  font-size: 16px;
+  background-color: rgba(173, 216, 230, 0.15);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.dots-container {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+/* The dots/bullets/indicators */
+.dots {
+  cursor: pointer;
+  height: 14px;
+  width: 14px;
+  margin: 0 4px;
+  background-color: rgba(173, 216, 230, 0.2);
+  backdrop-filter: blur(2px);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+.active,
+.dots:hover {
+  background-color: rgba(173, 216, 230, 0.8);
+}
+
+/* transition animation */
+.animate {
+  -webkit-animation-name: animate;
+  -webkit-animation-duration: 1s;
+  animation-name: animate;
+  animation-duration: 2s;
+}
+
+@keyframes animate {
+  from {
+    transform: scale(1.1) rotateY(10deg);
+  }
+  to {
+    transform: scale(1) rotateY(0deg);
+  }
+}
+  
+  
+  @media (max-width: 700px) {
+
+    *{
+        overflow-x: hidden;
+        
+    
+    }
+   
+}
+  
+  
+  
+    
+    
+  .blog-content{
+    width:80%;
+    margin:auto;
+    padding:60px 0;
+  }
+  .blog-left{
+    flex-basis:65%;
+  }
+  .blog-left img{
+    width:50%;
+  border:3px solid #000;
+ Float: left; 
+ border-radius:10px;
+    margin-left:15px;
+    margin-right:15px;
+    
+  }
+    .blog-left h2{
+      color:#222;
+      font-weight:600;
+      margin:30px 0;
+    }
+   
+   .blog-left p{
+     font-size:20px;
+     color:black;
+     padding:0;
+   }
+   
+   .blog-right{
+flex-basis: 32%;
+   }
+   
+   .blog-right h2{
+background: #f44336;
+color: #fff;
+  padding: 7px 0;
+font-size: 16px;
+margin-bottom: 20px;
+     display:flex;
+}
+
+   
+   .blog-right div{
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: #555;
+padding: 8px;
+box-sizing: border-box;
+   }
+  
+  
+  
+  
+.gullu{
+   text-align:center;
+ }
+
+
+.read-more {
+  
+  
+  &__link {
+    font-family: "Roboto";
+    font-weight: 700;
+  }
+}
+
+// Add is-line to wrapper to support a read more inline with the content.
+.read-more.is-inline,
+.read-more.is-inline p,
+.read-more.is-inline + span  {
+  display: inline;
+}
+
+.read-more.is-inline + span {
+  margin-left: 0.25em
+}
+  
+   
+  
+  .AAA{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+  
+  .cooontainer{
+    
+    position: relative;
+    max-width: 900px;
+    width: 400%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 0 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+.cooontainer header{
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+}
+.cooontainer header::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    height: 3px;
+    width: 27px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+.cooontainer form{
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+    background-color: #fff;
+    overflow: hidden;
+}
+.cooontainer form .form{
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+.cooontainer form .form.second{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+form.secActive .form.second{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+form.secActive .form.first{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+.cooontainer form .title{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 6px 0;
+    color: #333;
+}
+.cooontainer form .fields{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+form .fields .input-field{
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+.input-field label{
+    font-size: 12px;
+    font-weight: 500;
+    color: #2e2e2e;
+}
+.input-field input, select{
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+.input-field input :focus,
+.input-field select:focus{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+.input-field select,
+.input-field input[type="date"]{
+    color: #707070;
+}
+.input-field input[type="date"]:valid{
+    color: #333;
+}
+.cooontainer form button, .backBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+.cooontainer form .btnText{
+    font-size: 14px;
+    font-weight: 400;
+}
+form button:hover{
+    background-color: #265df2;
+}
+form button i,
+form .backBtn i{
+    margin: 0 6px;
+}
+form .backBtn i{
+    transform: rotate(180deg);
+}
+form .buttons{
+    display: flex;
+    align-items: center;
+}
+form .buttons button , .backBtn{
+    margin-right: 14px;
+}
+
+@media (max-width: 750px) {
+    .cooontainer form{
+        overflow-y: scroll;
+    }
+    .cooontainer form::-webkit-scrollbar{
+       display: none;
+    }
+    form .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field{
+        width: 100%;
+    }
+}
+  
+  
+  
+  
+    .location{
+
+width: 100%;
+ margin: auto;
+padding: 88px 0;
+      
+   }
+   
+.location iframe{
+
+width: 100%;
+}
+ 
+  
+  
+  
+ .conntainer{
+   
+  width: 85%;
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 60px 30px 40px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+.conntainer .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.conntainer .content .left-side{
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  position: relative;
+}
+.content .left-side::before{
+  content: '';
+  position: absolute;
+  height: 70%;
+  width: 2px;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #afafb6;
+}
+.content .left-side .details{
+  margin: 14px;
+  text-align: center;
+}
+.content .left-side .details i{
+  font-size: 30px;
+  color: #3e2093;
+  margin-bottom: 10px;
+}
+.content .left-side .details .topic{
+  font-size: 18px;
+  font-weight: 500;
+}
+.content .left-side .details .text-one,
+.content .left-side .details .text-two{
+  font-size: 14px;
+  color: #afafb6;
+}
+.conntainer .content .right-side{
+  width: 75%;
+  margin-left: 75px;
+}
+.content .right-side .topic-text{
+  font-size: 23px;
+  font-weight: 600;
+  color: #3e2093;
+}
+.right-side .input-box{
+  height: 50px;
+  width: 100%;
+  margin: 12px 0;
+}
+.right-side .input-box input,
+.right-side .input-box textarea{
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background: #F0F1F8;
+  border-radius: 6px;
+  padding: 0 15px;
+  resize: none;
+}
+.right-side .message-box{
+  min-height: 110px;
+}
+.right-side .input-box textarea{
+  padding-top: 6px;
+}
+.right-side .button{
+  display: inline-block;
+  margin-top: 12px;
+}
+
+    
+    
+    .hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid ;
+    padding: 12px 34px;
+    font-size: 13px;
+      
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.hero-btn:hover{
+   
+    border:1px solid #f44336;
+    background:#f44336;
+    transition: 0.5s;
+}
+  
+   .red-btn{
+border: 1px solid #f44336;
+background: transparent;
+color: #f44336;
+   }
+  .red-btn:hover{
+    color:#fff;
+  }
+  
+
+@media (max-width: 950px) {
+  .conntainer{
+    width: 100%;
+    padding: 30px 40px 40px 35px ;
+    
+  }
+  .conntainer .content .right-side{
+   width: 75%;
+   margin-left: 55px;
+}
+}
+@media (max-width: 820px) {
+  .conntainer{
+    margin: 40px 0;
+    height: 100%;
+    
+  }
+  
+  .conntainer .content{
+    flex-direction: column-reverse;
+  }
+ .conntainer .content .left-side{
+   width: 100%;
+   flex-direction: row;
+   margin-top: 40px;
+   justify-content: center;
+   flex-wrap: wrap;
+ }
+ .conntainer .content .left-side::before{
+   display: none;
+ }
+ .conntainer .content .right-side{
+   width: 100%;
+   margin-left: 0;
+ }
+}
+    
+  
+  .kkkk{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+  
+  .rwd-table {
+  margin: auto;
+  min-width: 300px;
+  max-width: 100%;
+  border-collapse: collapse;
+}
+
+.rwd-table tr:first-child {
+  border-top: none;
+  background: #428bca;
+  color: #fff;
+}
+
+.rwd-table tr {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background-color: #f5f9fc;
+}
+
+.rwd-table tr:nth-child(odd):not(:first-child) {
+  background-color: #ebf3f9;
+}
+
+.rwd-table th {
+  display: none;
+}
+
+.rwd-table td {
+  display: block;
+}
+
+.rwd-table td:first-child {
+  margin-top: .5em;
+}
+
+.rwd-table td:last-child {
+  margin-bottom: .5em;
+}
+
+.rwd-table td:before {
+  content: attr(data-th) ": ";
+  font-weight: bold;
+  width: 120px;
+  display: inline-block;
+  color: #000;
+}
+
+.rwd-table th,
+.rwd-table td {
+  text-align: left;
+}
+
+.rwd-table {
+  color: #333;
+  border-radius: .4em;
+  overflow: hidden;
+}
+
+.rwd-table tr {
+  border-color: #bfbfbf;
+}
+
+.rwd-table th,
+.rwd-table td {
+  padding: .5em 1em;
+}
+@media screen and (max-width: 601px) {
+  .rwd-table tr:nth-child(2) {
+    border-top: none;
+  }
+}
+@media screen and (min-width: 600px) {
+  .rwd-table tr:hover:not(:first-child) {
+    background-color: #d8e7f3;
+  }
+  .rwd-table td:before {
+    display: none;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    display: table-cell;
+    padding: .25em .5em;
+  }
+  .rwd-table th:first-child,
+  .rwd-table td:first-child {
+    padding-left: 0;
+  }
+  .rwd-table th:last-child,
+  .rwd-table td:last-child {
+    padding-right: 0;
+  }
+  .rwd-table th,
+  .rwd-table td {
+    padding: 1em !important;
+  }
+}
+
+
+  
+}
+.contaainer {
+  display: block;
+  text-align: center;
+  
+}
+.omfoo h2{
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  font-size: 1.5em;
+  color: #FF671F;
+}
+.omfoo h2:before {
+  content: "\25C0";
+  position: absolute;
+  left: -50px;
+  -webkit-animation: leftRight 2s linear infinite;
+  animation: leftRight 2s linear infinite;
+}
+.omfoo h2:after {
+  content: "\25b6";
+  position: absolute;
+  right: -50px;
+  -webkit-animation: leftRight 2s linear infinite reverse;
+  animation: leftRight 2s linear infinite reverse;
+}
+@-webkit-keyframes leftRight {
+  0%    { -webkit-transform: translateX(0)}
+  25%   { -webkit-transform: translateX(-10px)}
+  75%   { -webkit-transform: translateX(10px)}
+  100%  { -webkit-transform: translateX(0)}
+}
+@keyframes leftRight {
+  0%    { transform: translateX(0)}
+  25%   { transform: translateX(-10px)}
+  75%   { transform: translateX(10px)}
+  100%  { transform: translateX(0)}
+}
+
+/*
+    Don't look at this last part. It s unnecessary. I was just playing with pixel gradients... Don't judge.
+*/
+/*
+@media screen and (max-width: 601px) {
+  .rwd-table tr {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+    background-image: linear-gradient(left, #428bca 137px, #f5f9fc 1px, #f5f9fc 100%);
+  }
+  .rwd-table tr:nth-child(odd) {
+    background-image: -webkit-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -moz-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -o-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: -ms-linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+    background-image: linear-gradient(left, #428bca 137px, #ebf3f9 1px, #ebf3f9 100%);
+  }
+}*/
+  
+  
+  .mmm{
+
+margin: 0;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+
+
+
+  }
+
+  .loading{
+
+height: 3px;
+
+width: 300px;
+
+background-color: orange;
+
+animation: line 2s infinite alternate;
+
+}
+
+
+@keyframes line
+  {
+0%
+    {
+transform: scale(0);
+transform-origin: left;
+} 
+  45%
+  {
+transform: scale(1);
+
+transform-origin: left;
+  }
+50%
+  {
+
+transform: scale(1);
+
+transform-origin: right;
+  }
+100%
+  {
+transform: scale(0);
+
+transform-origin: right;
+  }
+
+  }
+
+  
+.underline{
+
+width: 100px;
+
+height: 3px;
+
+background-color: rgb(227, 227, 227);
+
+margin-top: 3px;
+
+border-radius: 3px;
+
+position: relative;
+  overflow:hidden;
+
+}
+
+.underline span{
+
+width: 7px;
+
+background-color: rgb(33,33,33);
+
+position: absolute;
+
+height: 100%;
+
+left: 10px;
+  border-radius:3px;
+  animation:moving 2s linear infinite;
+
+}
+  
+  
+  @keyframes moving {
+
+0%
+  {
+
+left: -20px;
+
+}
+
+100%
+  {
+
+left: 100%;
+  
+  }
+  }
+  
+  
+  
+  
+  
+  
+  
+    .paisa {
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+       
+        }
+
+       .money {
+            max-width: 95%;
+            max-height: 90vh;
+            width: 600px;
+            background: #fff;
+            padding: 40px;
+            overflow-y: auto;
+            border-top: 10px solid #0989ff;
+            ;
+
+        }
+
+        .flex {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .flex input {
+            border: none;
+            outline: none;
+            padding: 0px 20px;
+            height: 50px;
+            width: 100%;
+            border: 1px solid #e8e8e8;
+        }
+
+        .m10 {
+            margin-top: 10px;
+
+        }
+
+        .m20 {
+            margin-top: 20px;
+        }
+
+       .generate_qr {
+            width: 200px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            height: 50px;
+            background: #0989ff;
+            color: #fff;
+            padding: 0px 20px;
+          border-radius: 5px;
+
+        }
+
+        input:focus {
+            border: 1px solid #0989ff;
+        }
+
+       .generate_qr:hover {
+            background: #0870d0;
+        }
+
+        .get_qr {
+
+            height: 200px;
+            width: 200px;
+            border: 1px solid #999;
+            background: #efefef;
+        }
+
+        .qr_code {
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+       .rokda {
+            color: #7a7a7a;
+            font-size: 16px;
+            line-height: 24px
+        }
+
+        .im {
+            max-width: 100%;
+            width: 300px;
+        }
+
+.yahooo{
+  float: left;
+width: 28%;
+padding: 5px;
+
+}
+.yyahoo{
+ float: left;
+width: 30%;
+padding: 5px; 
+  
+}
+.yahoo {
+float: left;
+width: 33%;
+padding: 5px;
+
+}
+
+.bhandu::after {
+content: "";
+display: table;
+clear: both;
+}
+  
+  
+  </style>
+  
+</head>
+
+<body>
+  
+  
+  <section class="header">
+    <nav>
+      <a href="index.html"><img style="width:70px" src="
+        https://i.ibb.co/MZ6y0V5/iti-logo-transparent-free-png-removebg-preview.png" 
+        
+        alt="faculty" id="home"></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#courses">COURSE</a></li>
+          <li><a href="#teacher">TEACHER'S DETAIL</a></li>
+          
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#ragistration">RAGISTRATION</a></li>
+          
+          <li><a href="#contact">CONTACT</a></li>
+          
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <div class="text-box">
+     <h1>ITI</h1>
+            <p>Govt Mini Industrial Training Institute,<br> Bargi
+            </p>
+     
+      
+      
+      <a href="https://g.co/kgs/WXK3Jfa" class="heroo-btn"> Visit Us to know More</a>
+    </div>
+    
+    <div class="rag">
+      <a href="https://kartik90x.github.io/Kartik90x/"><img src="https://i.ibb.co/YdyGKJQ/android-messages-removebg-preview.png" width="15%">
+      </a>
+    
+    </div>
+    
+    
+  </section>
+  
+  <section>
+    
+      <div class="wrapper">
+    <div class="toast">
+      <div class="content">
+        <div class="icon"><i class="uil uil-wifi"></i></div>
+        <div class="details">
+          <span>You're online now</span>
+          <p>Hurray! Internet is connected.</p>
+        </div>
+      </div>
+      <div class="close-icon"><i class="uil uil-times"></i></div>
+    </div>
+  </div>
+
+    
+    
+    
+  </section>
+  
+  
+  
+  
+  
+  
+  
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+    <p>Never lose courage, never turn back, no
+matter how many difficulties there are in life, you just have to move forward.
+   
+    <div class="row">
+      <div class="course-col">
+        <h3>Qualification</h3>
+        <p>A pass in 8th,10th or Matriculation from any recognized Board. 
+  some some' ITI courses are available which you can join even after the 10th. 
+  12th pass students can also Join the ITI course. For most of the courses,
+  the minimum age at the time of admission should not be less than 14 years..</P>
+
+      </div>
+      <div class="course-col">
+        <h3>Diploma</h3>
+        <p>a certificate that you receive when you complete a course of study, often at a college.</P>
+
+      </div>
+      <div class="course-col">
+        <h3>Scholarship Facility</h3>
+        <p>Assistance will be provided as per government rules</p>
+
+      </div>
+    </div>
+  </section>
+  <section class="campus">
+    <h1>Our Campus</h1>
+          
+          
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+    <p>People keep finding shortcomings, successful people keep climbing towards success without listening to anyone .</p>
+    <div class="row">
+      <div class="campus-col">
+        <img src="https://i.ibb.co/3mcQndg/Picsart-24-04-15-11-23-54-658.jpg">
+  
+        <div class="layer">
+          <h3>MAIN GATE</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="https://i.ibb.co/kGYbm3T/IMG-20240415-WA0003.jpg">
+  
+        <div class="layer">
+          <h3>CLASS</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="https://i.ibb.co/rs9YB6T/IMG-20240415-WA0002.jpg">
+        
+        <div class="layer">
+          <h3>IT LAB</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="facilities">
+    <h1>Our facilities</h1>
+          
+          
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+    <p>Success becomes the story of life, When the destination is thought outside the box.</p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="https://www.eui.eu/Content-Types-Assets/Web-Unit/Two-library-researchers-looking-up-books-together.x1257477c.jpg?w=1920&h=1080">
+        <h3>Library</h3>
+        <p>A room or building that contains a collection of books, etc. that can be looked at or borrowed.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="https://i.dailymail.co.uk/i/pix/2012/11/06/article-2228609-15DF3B0F000005DC-600_964x634.jpg">
+        <h3>Play Ground</h3>
+        <p>A playground, playpark, or play area is a place designed to provide an environment for children that facilitates play, typically outdoors. While a playground is usually designed for children, some are designed for other age groups, or people with disabilities. A playground might exclude children below a certain age.</p>
+      </div>
+      <div class="facilities-col">
+        <img src="https://www.facilitiesnet.com/resources/editorial/2022/19187-FoodService.jpg">
+        <h3>Cafeteria</h3>
+        <p>A canteen is a place in a factory or military base where meals or snacks are served to the people who work there. Rennie had eaten his supper in the canteen..</p>
+      </div>
+    </div>
+  </section>
+    
+    
+   
+      
+      
+      
+   
+    
+    
+    
+    
+    
+    
+    
+  <section class="testimonials">
+    <h1>What Our Student Says</h1>
+          
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+    <p>Student Speech</p>
+          
+    <div class="row">
+      <div class="testimonials-col">
+        <img src="https://i.ibb.co/ZXtMsst/IMG-20240405-132216.jpg">
+
+        <div>
+          <p>Teachers are supportive ,syllabus is latest and upto date 
+  ,easy for students ,relevant and valuable ,academic performance 
+  of students is focussed and every possible way is done to make
+  students learn with fun.</p>
+          
+          
+        
+          
+          
+          
+          <h3>Mr.Kartik</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+        </div>
+      </div>
+      <div class="testimonials-col">
+        <img src="https://i.ibb.co/y82brpp/0f4fd5a2fcfafb1d137d4737a531078c.jpg" alt="something">
+        <div>
+          <p>College is bigger than it looks and has very good environment.
+  Every department has there own place there is mixing of department
+  so thats a good thing about it. College has bigger ground for its sport activities..</p>
+          
+  <h3>Miss.Sanu</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+      
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+       <section>
+         
+         <div class="course" id="about">
+           <h1>ABOUT US</h1>
+          
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+          <p>We provide comprehensive, quality education in implant dentistry and support and facilitate cutting-edge research in this field.</p>
+         </div>
+         
+         
+          <div class="coontainer">
+        <div class="card" style="--clr: #009688">
+            <div class="img-box">
+                <img src="https://i.ibb.co/F3fHrt6/IMG-20240408-210127.jpg">
+            </div>
+            <div class="content">
+                <h2>ITI</h2>
+                <p>
+                    Industrial training institutes and industrial training centers. is a qualification and are post-secondary
+    schools in India constituted under the Directorate General of Training.
+		
+	  
+Ministry of Skill Development and Entrepreneurship, Union Government, 
+    to provide training in various trades.
+	</p>
+              
+            </div>
+        </div>
+        <div class="card" style="--clr: #FF3E7F">
+            <div class="img-box">
+                <img src="https://i.ibb.co/ZXvkWSN/MP-ITI-Training-Officer-Recruitment-2024-1-jpg.webp">
+            </div>
+            <div class="content">
+                <h2>Career Growth </h2>
+                <p>
+                   The individuals appointed for the post of Training Officers will get a rewarding career growth based on their skills and academic excellence. After completing some year as Training Officers they will be promoted to Head of Department for respective trades and further they reach to Principal designation.
+        
+	
+	  
+             
+     </p>
+            
+            </div>
+        </div>
+        <div class="card" style="--clr: #03A9F4">
+            <div class="img-box">
+                <img src="https://i.ibb.co/jhJh4pG/MP-ITI-Training-Officer-Salary-1-jpg.webp">
+            </div>
+            <div class="content">
+                <h2>MP ITI  Per Month Salary</h2>
+                <p>
+                    Training Officer is the best entry-level
+    job for technical job aspirants to propel their 
+    career in academics. 
+	
+	  
+The Training Officers in Madhya 
+    Pradesh are entitled to a salary of Rs. 9,300 to 34,800/- 
+    per month. The salary also includes some perks and 
+    allowances as per the department’s guidelines.
+        
+                </p>
+              
+            </div>
+        </div>
+    </div>
+  </section>
+    
+   
+   
+  
+   <section>
+      
+      <div class="o-video">
+  <iframe src="https://www.youtube.com/embed/liejceKaSpU" allowfullscreen></iframe>
+</div>
+     
+  
+    </section>
+    
+   
+
+
+
+ 
+
+    
+  <section>
+
+    
+ 
+ 
+            
+</section>
+   
+      <section>
+          <div class="course" id="courses">
+           <h1>COURSES</h1>
+          
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+          <p>keep learn to grow</p>
+         </div>
+        
+           <div class="carousel-container">
+  <div class="mySlides animate">
+    <img src="https://i.ibb.co/F3fHrt6/IMG-20240408-210127.jpg" alt="slide" />
+    <div class="number">1 / 5</div>
+    <div class="text">ITI</div>
+  </div>
+
+  <div class="mySlides animate">
+    <img src="https://i.ibb.co/Ycdtv6f/Computer-Operator-and-Programming-Assistant.jpg" alt="slide" />
+    <div class="number">2 / 5</div>
+    <div class="text">COPA</div>
+  </div>
+
+  <div class="mySlides animate">
+    <img src="https://i.ibb.co/5sv22Z7/ITI-trade-Electrician.jpg" alt="slide" />
+    <div class="number">3 / 5</div>
+    <div class="text">ELECTRICIAN</div>
+  </div>
+
+  <div class="mySlides animate">
+    <img src="https://i.ibb.co/Lv1SVkC/Welder.jpg" alt="slide" />
+    <div class="number">4 / 5</div>
+    <div class="text">WELDER</div>
+  </div>
+
+  <div class="mySlides animate">
+    <img src="https://i.ibb.co/QKgTdDk/Mechanic-Motor-Vehicle.jpg" alt="slide" />
+    <div class="number">5 / 5</div>
+    <div class="text">MOTOR-MECHANIC</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="prevSlide()">&#10094;</a>
+  <a class="next" onclick="nextSlide()">&#10095;</a>
+
+  <!-- The dots/circles -->
+  <div class="dots-container">
+    <span class="dots" onclick="currentSlide(1)"></span>
+    <span class="dots" onclick="currentSlide(2)"></span>
+    <span class="dots" onclick="currentSlide(3)"></span>
+    <span class="dots" onclick="currentSlide(4)"></span>
+    <span class="dots" onclick="currentSlide(5)"></span>
+  </div>
+</div> 
+        
+        
+      </div>
+      </section>
+                
+
+<section>
+  
+  
+<div class="article article_expandable">
+  <img class="article__image" src="https://i.ibb.co/Ycdtv6f/Computer-Operator-and-Programming-Assistant.jpg" alt="COPA" loading="lazy">
+  <div class="article__wrapper">
+    <h4 class="article__title">COMPUTER OPERATOR AND PROGRAMING ASSISTANCT (COPA)</h4>
+    <p class="article__text">Syllabus for ITI Trade Computer Operator and Programming Assistant (COPA)<br>
+IT-ITeS
+Trades Duration: 
+One year<br>
+Minimum Qualification Eligibility: <br>
+10th Passed under 10+2 System<br>
+Trade Type: 
+Non Engineering<br>
+    </p>
+    <div class="article__hidden-div hidden">
+      <p class="article__text">
+        ITI trade Computer Operator and Programming Assistant (COPA) is powered by NCVT. 
+  ITI trade Computer Operator and Programming Assistant (COPA)  is a job oriented 
+  trade ITI trade Computer Operator and Programming Assistant (COPA) is suitable for 
+  government job and private job. This ITI trade Computer Operator and Programming 
+  Assistant (COPA) is very powerful for self-empowerment. This ITI trade Computer Operator
+  and Programming Assistant (COPA) is perfectly design to fulfill industrial requirement of Indian
+  Industries as well as International industries.<br>
+
+The individual can work as both Computer Operator/ Programming Assistant; operates computer
+  and peripheral equipment to process business, scientific, engineering, or other data, 
+  according to operating instructions. As programming assistant installs, maintains and updates 
+  computer programs by making minor changes and adjustments to them under the guidance of computing 
+  professionals. Maintains and updates documents of computer programs and installations with assistance 
+  under supervision of supervisor <br>
+
+On successful completion of this course the candidates shall be gainfully employed as:<br>
+
+  <li>Computer Operator</li>
+  <li>Programming Assistant</li>
+        
+      </p>
+    </div>
+    <button class="article__accordion hero-btn red-btn">Read more...</button>
+  </div>
+</div>
+</div>
+<div class="article article_expandable">
+  <img class="article__image" src="https://i.ibb.co/5sv22Z7/ITI-trade-Electrician.jpg" alt="ELECTRICIAN" loading="lazy">
+  <div class="article__wrapper">
+    <h4 class="article__title">ELECTRICIAN</h4>
+    <p class="article__text">Syllabus for ITI Trade Electrician
+Power<br>
+Trades Duration: 
+Two Year<br>
+Minimum Qualification Eligibility: <br>
+10th Passed under 10+2 System with Science & Maths<br>
+Trade Type: 
+Engineering<br>
+    <div class="article__hidden-div hidden">
+      <p class="article__text">
+        ITI trade Electrician is powered by NCVT.  ITI trade Electrician  
+  is a job oriented trade ITI trade Electrician is suitable for government 
+  job and private job. This ITI trade Electrician is very powerful for 
+  self-empowerment. This ITI trade Electrician is perfectly design to
+  fulfill industrial requirement of Indian Industries as well as International 
+  industries.<br>
+
+  <li>Electricians have a wide scope of Employability ranging from self-employment, 
+  contractual employment to Industrial jobs. </li>
+  <li> After successful completion of this course, 
+    Electricians can aspire to become Electrical Contractors
+    by acquiring the ‘B” licence from the Electrical Licence Board. </li>
+  <li>They can set up their own Rewinding and servicing of Domestic Equipment shop.  </li>
+  <li>Job opportunities are wide open in Defence, Railways, Transport, Ship Building, 
+    Electricity Board, various  Industries etc.</li>
+  <li>They can also go for further higher studies after successful completion of course.</li>
+  <li>Students who have completed this course have found employment in the following areas:</li>
+  <li>Service/Maintenance Technician for domestic appliances in Reputed Companies</li>
+  <li>Winder of Electrical Motors in winding shop</li>
+  <li>Contractor for domestic wiring and industrial wiring</li>
+  <li>Armature winder of Electrical fans and motors</li>
+  <li>Electrical appliance repair in electrical shops</li>
+  <li>Indian Railway (Asst. Driver, Tech. Gr. III, Appr. Technician)</li>
+  <li>Local Electricity Board</li>
+  <li>Assembler of Electrical control Gears</li>
+  <li>Telephone Department</li>
+  <li>Installation and Testing division of Auditorium and Cinema Hall</li>
+  <li>Factories</li>
+  <li>As Instructor in Govt./Private ITI/ITC</li>
+  <li>Merchant Navy</li>
+  <li>Indian Air Force</ki>
+  <li>Self-Employment in Service Centre.</li>
+
+        
+        
+      </p>
+    </div>
+    <button class="article__accordion  hero-btn red-btn ">Read more...</button>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="article article_expandable">
+  <img class="article__image" src="https://i.ibb.co/Lv1SVkC/Welder.jpg" alt="WELDER" loading="lazy">
+  <div class="article__wrapper">
+    <h4 class="article__title">WELDER</h4>
+    <p class="article__text">Syllabus for ITI Trade Welder<br>
+Capital Goods & Manufacturing
+Trades Duration: <br>
+One year<br>
+Minimum Qualification Eligibility: <br>
+10th Passed under 10+2 System<br>
+Trade Type: 
+Engineering<br>
+    <div class="article__hidden-div hidden">
+      <p class="article__text">
+        ITI trade Welder is powered by NCVT.  ITI trade Welder  
+  is a job oriented trade ITI trade Welder is suitable for 
+  government job and private job. This ITI trade Welder is very 
+  powerful for self-empowerment. This ITI trade Welder is perfectly 
+  design to fulfill industrial requirement of Indian Industries as well 
+  as International industries.<br>
+
+Gas welding (includes gas cutting), Arc welding, TIG welding, MIG/MAG welding etc
+
+      </p>
+    </div>
+    <button class="article__accordion hero-btn red-btn  ">Read more...</button>
+  </div>
+</div>
+</div>
+
+
+
+
+<div class="article article_expandable">
+  <img class="article__image" src="https://i.ibb.co/QKgTdDk/Mechanic-Motor-Vehicle.jpg" alt="MOTOR-MECHANIC" loading="lazy">
+  <div class="article__wrapper">
+    <h4 class="article__title">MOTOR-MECHANIC</h4>
+    <p class="article__text">Syllabus for ITI Trade Electrician
+Power<br>
+Trades Duration: 
+Two Year<br>
+Minimum Qualification Eligibility: <br>
+10th Passed under 10+2 System with Science & Maths<br>
+Trade Type: 
+Engineering<br>
+    <div class="article__hidden-div hidden">
+      <p class="article__text">
+        Motor vehicle mechanic is a two-year vocational 
+          programme where the students are taught about major 
+          overhauling, repairing and servicing skills of motor 
+          vehicles like buses, trucks, cars, motorcycles/scooters 
+          etc. During the training period, the students are also
+          taught about how to maintain various parts of a vehicle like 
+          steering/handle, brakes, fault diagnosis, transmission, suspension etc. <br>
+
+With almost every house having a motor vehicle (two-wheeler or four-wheeler) in the cities,
+          towns and semi-towns, there is always a shortage of good and skilled motor vehicle 
+          mechanics. Also, a diploma from a reputed ITI in motor vehicle mechanics can open up
+          the gateways to various opportunities in Government and Government-aided sectors. </p>
+
+      </p>
+    </div>
+    <button class="article__accordion hero-btn red-btn">READ MORE...</button>
+    
+  </div>
+</div>
+</div>
+
+
+  
+  
+</section>
+
+
+
+
+
+
+<section>
+  
+    <div class="course" id="teacher">
+           <h1>TEACHER's DETAIL</h1>
+        
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+  
+  
+  
+<div class="contaainer">
+
+  <table class="rwd-table">
+    <tbody>
+      <tr>
+        <th>NO.</th>
+        <th>Teacher Name</th>
+        <th>Post</th>
+        <th>Trade</th>
+        <th>Contact Number</th>
+        <th>Gmail</th>
+      </tr>
+      <tr>
+        <td data-th="NO.">
+          1.
+        </td>
+        <td data-th="Teacher Name">
+          MR.PANKAJ SHARMA
+        </td>
+        <td data-th="Post">
+          INSTITUTE HEAD
+        </td>
+        <td data-th="Trade">
+         
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+   
+      <tr>
+          <td data-th="NO.">
+          2.
+        </td>
+        <td data-th="Teacher Name">
+          MR.ASHUTOSH SHARMA
+        </td>
+        <td data-th="Post">
+          T O 
+        </td>
+        <td data-th="Trade">
+         COPA
+        </td>
+        <td data-th="Contact Number">
+        +918839592762
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+      <tr>
+         <td data-th="NO.">
+          3.
+        </td>
+        <td data-th="Teacher Name">
+          MR.RAVISH SHASTRI
+        </td>
+        <td data-th="Post">
+          T O
+        </td>
+        <td data-th="Trade">
+         COPA
+        </td>
+        <td data-th="Contact Number">
+        +918718809750
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     
+  
+  
+  <tr>
+         <td data-th="NO.">
+          4.
+        </td>
+        <td data-th="Teacher Name">
+          MR.PANKAJ SHARMA
+        </td>
+        <td data-th="Post">
+          T O
+        </td>
+        <td data-th="Trade">
+         ElECTRICIAN
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     
+  
+  
+  <tr>
+         <td data-th="NO.">
+          5.
+        </td>
+        <td data-th="Teacher Name">
+         MS. TEENA GARG 
+        </td>
+        <td data-th="Post">
+          T O
+        </td>
+        <td data-th="Trade">
+         ElECTRICIAN
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     
+  <tr>
+         <td data-th="NO.">
+          5.
+        </td>
+        <td data-th="Teacher Name">
+         MS. TEENA GARG 
+        </td>
+        <td data-th="Post">
+          T O
+        </td>
+        <td data-th="Trade">
+            ElECTRICIAN
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     
+  
+  <tr>
+         <td data-th="NO.">
+          6.
+        </td>
+        <td data-th="Teacher Name">
+         MR.KAMLENDRA SINGH RAJPUT
+        </td>
+        <td data-th="Post">
+          T O
+        </td>
+        <td data-th="Trade">
+         MMV
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     
+  
+  
+  <tr>
+         <td data-th="NO.">
+          7.
+        </td>
+        <td data-th="Teacher Name">
+       MR.RAJNIKANT HAKLE
+        </td>
+        <td data-th="Post">
+          T O
+        </td>
+        <td data-th="Trade">
+         MMV
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     
+    <tr>
+         <td data-th="NO.">
+          8.
+        </td>
+        <td data-th="Teacher Name">
+       MR.VEER-NARAYAN SINGH
+        </td>
+        <td data-th="Post">
+          T O
+        </td>
+        <td data-th="Trade">
+         WELDER
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     
+  
+  
+    <tr>
+         <td data-th="NO.">
+          9.
+        </td>
+        <td data-th="Teacher Name">
+       MR.DEVENDRA CHOUDHARY
+        </td>
+        <td data-th="Post">
+          T O
+        </td>
+        <td data-th="Trade">
+        WELDER
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     
+  
+  
+  
+    <tr>
+         <td data-th="NO.">
+          10.
+        </td>
+        <td data-th="Teacher Name">
+       MR.D.SOHIT KUMAR
+        </td>
+        <td data-th="Post">
+          T O
+        </td>
+        <td data-th="Trade">
+        MATH/DRAWING
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     </tbody>
+  </table>
+             
+             
+  
+  
+  
+  <div class="course" id="">
+           <h1>OFFICE SUPERINTENDENT</h1>
+         </div>
+  
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+  <div class="contaainer">
+
+  <table class="rwd-table">
+    <tbody>
+      
+        <tr>
+       <th>NO.</th>
+        <th> Name</th>
+        <th>Post</th>
+        <th>Trade</th>
+        <th>Contact Number</th>
+        <th>Gmail</th>
+      
+              <tr>
+         <td data-th="NO.">
+          1.
+        </td>
+        <td data-th="Teacher Name">
+       SHREE VASANTHA SARYAM
+        </td>
+        <td data-th="Post">
+        ASSISTENT GRADE-3
+        </td>
+        <td data-th="Trade">
+        -
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+     
+             
+             
+             
+         <tr>
+         <td data-th="NO.">
+          2.
+        </td>
+        <td data-th="Teacher Name">
+       SHREE DURGA PRASAD RAIKWAR
+        </td>
+        <td data-th="Post">
+         SERVENT
+        </td>
+        <td data-th="Trade">
+       -
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+             
+             
+     
+       <tr>
+         <td data-th="NO.">
+          3.
+        </td>
+        <td data-th="Teacher Name">
+       SHREE SUKHDEV PRASAD GOND
+        </td>
+        <td data-th="Post">
+        WATCHMAN
+        </td>
+        <td data-th="Trade">
+        -
+        </td>
+        <td data-th="Contact Number">
+        0000000000
+        </td>
+        <td data-th="Gmail">
+        ......@gmail.com
+        </td>
+      </tr>
+           
+                 
+  
+  
+  
+  
+  
+    </tbody>
+  </table>
+       
+    <div class="omfoo">      
+  
+  <h2>INDUSTRIAL TRAINING INSTRITUTE</h2>
+  </div>
+             
+             </div>
+  
+  
+  
+  
+</section>
+
+    <div class="course" id="blog">
+           <h1>BLOG</h1>
+      
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+      <p>On The Road To Success, We Are Building Our Passion, Moving Forward At Every Step, Moving Towards Our Destination.</p>
+    </p>
+         </div>
+    <section class="blog-content"
+    
+<div class="row">
+  <div class="blog-left">
+    <img src="https://i.ibb.co/jMRpMnz/IMG-20240408-222525.jpg">
+      
+  
+<div class="blog-right">
+  <h2>GOVERNMENT JOBS</h2>
+<div>
+  <span>RAILWAY JOBS </span>  
+  <span>5000+</span>
+</div>
+  <div>
+  <span>BANK SECTOR JOBS</span>  
+  <span>8000+</span>
+</div>
+  <div>
+  <span>ASSISTANT JOBS</span>  
+  <span>5000+</span>
+</div>
+  <div>
+  <span>PUBLIC SECTOR (PSU) JOBS</span>  
+  <span>1000+</span>
+</div>
+  <div>
+  <span>ASSISTANT JOBS</span>  
+  <span>5000+</span>
+</div>
+  <div>
+
+    <br>
+    
+    
+    
+    
+    
+    
+    
+           
+    
+
+  
+  </section>
+    
+  <section>
+    <main>
+      <div class="gullu">
+  <article class="page">
+    
+  <section class="page__main">
+   
+    <h2 class="page__title">Our Certificate & Online Programs For 2023-24</h2>
+    
+    <div class="page__pretitle">
+       </div>
+    
+    <div class="readmore js-read-more" data-rm-words="70">
+  <p>Diploma courses are the key to enhancing skills or gaining 
+      knowledge in much less time than mainstream degrees. Most people 
+      choose diploma courses after 12th grade or after completing graduation.
+      The diploma certificate adds additional value to the knowledge and skills 
+      of a student and makes them industry-ready.
+      
+    
+  </p> 
+  
+<p>Instead of pursuing higher studies, because of lack of time, many people
+      opt for diploma certificate courses. These courses are more sorted than 
+      any other degrees, are more industry-focused, and are less expensive. Also, 
+      candidates with additional diploma degrees have the highest chance of securing 
+      better job positions. Diploma courses help job aspirants stand out.  
+  
+</p>
+ <br>
+    <h3>Importance of Diploma Courses in Today s Job Market</h3>
+
+    <p>
+      The competitive job market worldwide demands candidates to be better and better, 
+      and a mainstream specialization course is not enough. While specialization courses
+      provide in-depth knowledge on a subject, diploma courses aim at improvising skills 
+      and making them industry-ready. In other words, diploma courses are more focused on 
+      skill development. 
+    </p>
+    <br>
+    <p>Since diploma courses focus on providing hands-on experience to students pairing up
+    with the latest trends and technologies, they prepare for their chosen careers. It is
+    essential for every aspiring student who wishes to thrive in a competitive market successfully
+    to obtain a diploma degree because it introduces them to necessary practical skills. Rather than 
+    learning bookish words, real-world practices and scenarios become a part of such courses.</p>
+    <br>
+    <p>For instance, after completing 12th grade, if a student wishes to begin their professional
+      career right away in the digital marketing industry, a diploma in digital marketing course 
+      will introduce them to the industry standards and practical skills. </p>
+    <br>
+    <p>Keeping aside the point of view of employees, it is also important to discuss why a job 
+      aspirant must seek a diploma course. And the reasons are the following:</p>
+    <li>Diploma courses are industry-oriented, so they help students learn about the field they 
+      are about to work in or the responsibility associated with their preferred job roles.</li>
+    
+    <li>Much less time is required to complete diplomas than specialization degrees like bachelor 
+      s and master s. Diplomas are the best choice for students who want to begin their professional
+      career right after high school or do not wish to continue with time-consuming higher studies. </li>
+    <li>These courses offer career flexibility and open doors to a wide range of career opportunities. </li>
+    <li>Diplomas are less expensive than specialization degrees.</li>
+    <li>They add more value to your professional career and ensure high salary expectancy. </li>
+    <li>The criteria for pursuing a diploma course are minimal therefore, anyone can pursue them and enhance their professional skills. </li>
+    <br>
+    <h3>Statistics or Data on the Demand for Diploma Courses in Various Industries</h3>
+    <p>The biggest companies worldwide are upgrading their recruitment eligibility criteria. They wish to recruit employees who have prior
+      knowledge of the work they are about to do. This not only helps companies save time in offering long on-the-job training to employees 
+      but also eliminates the hassles of employers having to undergo rigorous training. Candidates who obtain diploma degrees are more
+      likely to begin with the world s highest-paying jobs. </p>
+    <br>
+    <p>Since the world witnessed the pandemic, everything has gone online, from marketing to working from home and education. Recent
+      statistics say that approximately 1.6 million students chose distance learning after high school and the majority of the courses 
+      selected were graduate and post-graduate diplomas. Rather than spending time visiting campus for courses, students worldwide preferred 
+      online courses that were short-spanned. </p>
+    <br>
+    <p>As diplomas prepare students for the competitive job market in less time, the statistical reports of enrollment in graduate and
+      post-graduate diploma courses worldwide are seeing an impressive growth rate. </p>
+    <br>
+    <p>According to various surveys, the countries encouraging students to take diploma courses the most are the USA, Canada, Australia,
+      Ireland, the UK, and New Zealand. Not just domestic students, these countries encourage an impressive number of international students 
+      to come and study abroad for diplomas and get job-ready. </p>
+    <br>
+    <p>The highest demand for diploma courses is seen in the industries of engineering, management, hospitality and tourism, aviation, 
+      multimedia, nursing, information technology, and many others. </p>
+    <br>
+    <h3>What are Diploma Courses?</h3>
+    <p>Usually, diplomas are recognized as short-term courses focusing on vocational training and skill development. Diplomas are specially
+      designed to provide industry training to aspiring professionals who specialize in everything that is career-oriented and prepare them for jobs. </p>
+    <br>
+    <p>From practical skills to mastering vocational education, diploma courses have a duration between 6 months to two years, and in this span, 
+      it prepares a student for the real-world job scenario. The courses focus on a particular field; for instance, a student willing to seek a
+      career in management will pursue a graduate or post-graduate diploma in management and get trained for the highest-paying job opportunities. </p>
+    <br>
+    <p>In other words, diplomas are advanced certificate courses that combine career and technical education (CTE), also recognized as vocational 
+      education and training (VET) to develop professional skills. </p>
+   </div>
+  
+    </div>
+  </div>
+   </div>
+                </div> 
+            </div>
+           
+  </section>
+</article>
+</main>
+    
+    
+    
+    
+  </section>
+      
+    <section>
+              <div class="course" id="ragistration">
+           <h1>RAGISTRATION</h1>
+                
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+                
+         </div>
+             <div class="AAA">
+       
+         
+      
+          <div class="cooontainer">
+          <form action="https://api.web3forms.com/submit" method="POST"
+      class="contact-left">
+      <input type="hidden" name="access_key" value="b6015aaa-2055-4a65-806d-3213190bf37c">
+    
+           
+        <header>Registration</header>
+
+      
+       
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Personal Details</span>
+
+                    <div class="fields">
+                          <div class="input-field">
+              <label>First Name</label>
+              <input  type="text" name=" first Name" placeholder="Your first Name" class="contact-inputs" required>
+        
+            </div>
+                      
+                                <div class="input-field">
+              <label>Last Name</label>
+              <input  type="text" name="last Name" placeholder="Your last Name" class="contact-inputs" required>
+        
+            </div>
+                       <div class="input-field">
+              <label>Mobile Number</label>
+              <input type="number" name="Mob." placeholder="Your Mob.no" class="contact-inputs" required>
+      
+            </div>
+                      
+
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" name="date of birth" placeholder="Enter birth date" class="contact-inputs" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="text" name="email" placeholder="Enter your email" class="contact-inputs" required>
+                          
+                        </div>
+
+                        
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <select name="gender" class="contact-inputs" required>
+                                <option disabled selected>Select gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Others</option>
+                            </select>
+                        </div>
+
+                       
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">Identity Details</span>
+
+                    <div class="fields">
+                       <div class="input-field">
+              <label>Samagra ID</label>
+              <input type="text" name="id" placeholder="Enter samagra id " class="contact-inputs" required>
+            </div>
+
+                       <div class="input-field">
+              <label>Aadhaar No.</label>
+              <input type="number" name="aadhar no"placeholder="Enter Aadhaar number" class="contact-inputs" required>
+            </div>
+
+                       <div class="input-field">
+              <label>Caste Certificate Number</label>
+              <input type="text" name="Caste certificate" placeholder="Enter Certificate Number" class="contact-inputs" required>
+            </div>
+
+                         <div class="input-field">
+                            <label>Category</label>
+                            <select name="Category" class="contact-inputs" required>
+                                <option disabled selected>Select Category</option>
+                                <option>Sc</option>
+                                <option>St</option>
+                                <option>Obc</option>
+                              <option>Gen</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Annual family income</label>
+                            <input type="text" name="Annual family income१q" placeholder="Enter your issued date" class="contact-inputs" required>
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>sthayi niwas Praman Patra</label>
+                            <input type="text" name="sthayi niwas Praman Patra" placeholder="Enter your issued date" class="contact-inputs" required>
+                        </div>
+
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Next</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+
+            <div class="form second">
+                <div class="details address">
+                    <span class="title">Address Details</span>
+
+                    <div class="fields">
+                       <div class="input-field">
+                            <label>Education Qualification</label>
+                            <select name="Qualification" class="contact-inputs" required>
+                                <option disabled selected>Select Education</option>
+                                <option>10</option>
+                                <option>12</option>
+                               
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Roll Number</label>
+              <input type="number" name="roll" placeholder="Enter roll number" class="contact-inputs" required>
+            </div>
+
+                        <div class="input-field">
+                             <label>Percentage</label>
+              <input type="number" name="perchantages" placeholder="Enter percentage" class="contact-inputs" required>
+            </div>
+                        </div>
+                </div>
+
+              
+                
+                <div class="details address">
+          <span class=" title">Addresss Details</span>
+          <div class="fields">
+            
+            <div class="input-field">
+              <label>Address Line1</label>
+              <input  type="text"  name="address" placeholder="Your address" class="contact-inputs" required>
+        
+            </div>
+            
+            <div class="input-field">
+              <label>Pin code</label>
+              <input  name="pincode" type="password" inputmode="numeric" maxlength="8">
+            </div>
+            
+               
+            <div class="input-field">
+              <label>Block</label>
+           <input type="text"  name="block" placeholder="Enter block" class="contact-inputs" required>
+            </div>
+            
+          
+        
+            
+            <div class="input-field">
+              <label>Tehsil</label>
+              <input type="text" name="tehsil" placeholder="Enter tehsil" class="contact-inputs" required>
+              
+            </div>
+            
+            <div class="input-field">
+                            <label>Form submited date</label>
+                            <input type="date" name="Form submited date" placeholder="Enter birth date" class="contact-inputs" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label for="input-field"> Select State</label>
+                            <select name="State" class="form-control" id="inputState" required>
+                              
+                                <option disabled selected>Select state</option>
+                               <option value="SelectState">Select State</option>
+                        <option value="Andra Pradesh">Andra Pradesh</option>
+                        <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Bihar">Bihar</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Himachal Pradesh">Himachal Pradesh</option>
+                        <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                        <option value="Jharkhand">Jharkhand</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Kerala">Kerala</option>
+                        <option value="Madya Pradesh">Madya Pradesh</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Manipur">Manipur</option>
+                        <option value="Meghalaya">Meghalaya</option>
+                        <option value="Mizoram">Mizoram</option>
+                        <option value="Nagaland">Nagaland</option>
+                        <option value="Orissa">Orissa</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Rajasthan">Rajasthan</option>
+                        <option value="Sikkim">Sikkim</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Tripura">Tripura</option>
+                        <option value="Uttaranchal">Uttaranchal</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West Bengal">West Bengal</option>
+                        <option disabled style="background-color:#aaa; color:#fff">UNION Territories</option>
+                        <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Dadar and Nagar Haveli">Dadar and Nagar Haveli</option>
+                        <option value="Daman and Diu">Daman and Diu</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Lakshadeep">Lakshadeep</option>
+                        <option value="Pondicherry">Pondicherry</option>
+                      </select>
+  </div>
+ </select>
+                        </div>
+            
+            
+            <div class="input-field">
+    <label for="input-field">State District</label>
+              <select name="State District" class="form-control" id="inputDistrict" required>
+                              
+   
+      
+        <option value="">-- select one -- </option>
+    </select>
+  </div>
+               
+                        
+
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <i class="uil uil-navigator"></i>
+                            <span class="btnText">Back</span>
+                        </div>
+                        
+                        <button class="sumbit">
+                            <span class="btnText">Submit</span>
+                            <i class="uil uil-navigator"></i>
+                        </button>
+                    </div>
+                </div> 
+            </div>
+           </div>
+           
+           
+        </form>
+      
+      
+    </section>
+  
+
+      
+      
+         <section class="location">
+             
+              <div class="course" id="contact">
+           <h1>CONTACT</h1>
+                
+  
+         <div class="mmm">
+  <div class="loading"></div>
+  </div>
+  
+    <div style="left: 0; width: 100%; height: 0; position: 
+      relative; padding-bottom: 75%;"><iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD1VnYC6EugmolDY9RjsZ77TeXstyj0288&q=2V2P%2BWV6+Government+ITI+Bargi,+Jabalpur,+Madhya+Pradesh+482051&zoom=17" 
+        
+        style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen></iframe></div>
+    
+         </div>
+         </div>
+  </section>
+
+      
+      
+      <section>
+        
+             
+             <div class="kkkk">
+         <div class="conntainer">
+    
+      
+        
+    <div class="content">
+      <div class="left-side">
+        <div class="address details">
+          <i class="fas fa-map-marker-alt"></i>
+          <div class="topic">Address</div>
+          <div class="text-one">Jabalpur, Madhya Pradesh 482051</div>
+          <div class="text-two">Saliwara</div>
+        </div>
+        <div class="phone details">
+          <i class="fas fa-phone-alt"></i>
+          <div class="topic">Phone</div>
+          <div class="text-one">+0098 9893 5647</div>
+          <div class="text-two">+0096 3434 5678</div>
+        </div>
+        <div class="email details">
+          <i class="fas fa-envelope"></i>
+          <div class="topic">Email</div>
+          <div class="text-one">kartik.455x@gmail.com</div>
+          <div class="text-two">kartikx018@gmail.com</div>
+        </div>
+      </div>
+      <div class="right-side">
+        <div class="topic-text">Send us a message</div>
+        <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+      <form action="https://api.web3forms.com/submit" method="POST"
+      class="contact-left">
+      <input type="hidden" name="access_key" value="b6015aaa-2055-4a65-806d-3213190bf37c">
+    
+        
+        <div class="input-box">
+          <input  type="text" name=" first Name" placeholder="Your first Name" class="contact-inputs" required>
+        
+        </div>
+        <div class="input-box">
+          <input type="text" name="email" placeholder="Enter your email" class="contact-inputs" required>
+                       
+        </div>
+          <div class="input-box">
+          <textarea name="Message" placeholder="Your Message" class="contact-inputs" required></textarea>
+      
+        </div>
+     
+          <button type="submit" class="hero-btn red-btn">POST
+COMMENT</button>
+        </div>
+      </form>
+    </div>
+    </div>
+  </div>
+</div>
+        
+        
+      </section>
+      
+      
+      <section>
+          
+                    
+  <div class="paisa">
+    <div class="money">
+    <section>
+        <h1>GET THE DONATION</h1>
+      
+          
+        <div class="form">
+            
+            <div class="flex m20">
+
+                <button class="generate_qr">NEXT</button>
+               
+            </div>
+        </div>
+        <div class="qr_code m20">
+          <div class="rokda">
+            <p>Scan the QR Code with any UPI App and pay the amount then download the source code.</p>
+          </div>
+            <center><img src="" alt="QR CODE" class="get_qr m10"></center>
+          <div class="bhandu">
+          <div class="yahoo">
+            
+            <a href="upi://pay?pa=8951362952@airtel&am=&tn=8951362952"><img src="https://i.ibb.co/sqh4gqc/download-removebg-preview.png" class="im m10"></a>
+          </div>
+            <div class="yyahoo">
+              <a href="upi://pay?pa=8951362952@ybl&am=&tn=8951362952"><img src="https://i.ibb.co/7n59hGc/download-1-removebg-preview.png" class="im m10"></a> 
+        
+          </div>
+            <div class="yahooo">
+              <a href="upi://pay?pa=8951362952@paytm&am=&tn=8951362952"><img src="https://i.ibb.co/R9tY55N/images-1-removebg-preview.png" class="im m10"></a>
+          
+          </div>
+          </div>
+           <form action="https://api.web3forms.com/submit" method="POST"
+      class="contact-left">
+      <input type="hidden" name="access_key" value="b6015aaa-2055-4a65-806d-3213190bf37c">
+    
+          <div class="flex m20">
+                <label>Full Name*</label>
+                <input type="text" name="name" placeholder="Full Name" class="m10 name">
+            </div>
+           
+           
+            <button class="download_now m20  generate_qr ">Submit</button>
+        </div>
+    </div>
+      
+    </div>
+    </form> 
+          
+          </section>
+      
+       
+            
+            
+            
+       
+            
+            
+            
+            
+            
+            
+            
+      
+      
+  <section class="cta">
+    <h1>Enroll for Our various online Courses <br>anywhere from th World</h1>
+    <a href="https://g.co/kgs/bBermVo" class="hero-btn">EXPLORE NOW</a>
+  </section>
+    
+    
+ <section class="footer">
+
+<footer class="footer">
+    <div class="waves">
+  
+      <div class="contentt">
+      <div class="top">
+        <div class="logo-details">
+          <i class="fab fa-slack"></i>
+          <span class="logo_name">BARGI ITI</span>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.facebook.com/profile.php?id=100089438737232&mibextid=rS40aB7S9Ucbxw6v"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://t.me/kartik90x"><i class="fab fa-telegram"></i></a>
+          <a href="https://www.instagram.com/kartik.90x?igsh=b2JoeHZjMTdyNjZ3"><i class="fab fa-instagram"></i></a>
+          <a href="https://whatsapp.com/channel/0029VaDDQwUGpLHKjvEEvW0T"><i class="fab fa-whatsapp"></i></a>
+          <a href="https://youtube.com/@Arjun__0x.?si=nmbqoM-U0zuSOxut"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+      <div class="link-boxes">
+        <ul class="box">
+        <li class="link_name"> Company</li>
+          <div class=" underline "><span></span>
+         </div>
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#courses">COURSE</a></li>
+          <li><a href="#teacher">TEACHER'S DETAIL</a></li>
+          
+          <li><a href="#blog">BLOG</a></li>
+          <li><a href="#ragistration">RAGISTRATION</a></li>
+          
+          <li><a href="#contact">CONTACT</a></li>
+          
+        </ul>
+        <ul class="box">
+          <li class="link_name">Services</li>
+          <div class=" underline "><span></span>
+         </div>
+          <li><a href="https://play.google.com/store/apps/details?id=com.myairtelapp">Banking</a></li>
+          <li><a href="*Looking for one app to research, analyse, invest? Join Upstox!*  
+  
+Opening an Upstox account is easy-peasy. All you need is your PAN + Aadhaar. You can sign-up online using my link within the next 7 days: https://link.upstox.com/QEcg  
+
+🛒 Upstox makes investing fun and it feels just like online shopping!  
+  
+💸 With special filters + smartlists they make the search for the right investment simple  
+
+💰 They’ve got SIP modes for both Mutual Funds & Stocks   
+
+📰 They’re easy to understand with news, research & insights on all investments  
+
+📈 And have a separate app for traders with TradingView, GTT orders, Option Chain   
+  
+*P.S. Sign up with a number not registered with Upstox before. Can’t wait to welcome you to the Upstox fam👋!*">Upstox</a></li>
+          <li><a href="*Open your Trading & Investment account with Angel One for FREE* 
+
+You will get:
+✅ Delivery trades 🆓 
+✅ Intraday & FnO in Rs.20 💹
+✅ Quick SIP in Direct MF ⚡
+✅ 50K MTF @ 0% interest 💰
+
+
+Download using my referral link to get Free Demat Account
+⬇link may expire within 48hrs
+https://angel-one.onelink.me/Wjgr/3izhkz8k
+
+Or use my Referral code KA87912RJJ
+_T&C Apply_
+">Angel one</a></li>
+          <li><a href="https://gromo.page.link/mA5izub9zRcDFzxo6">Gromo </a></li>
+        </ul>
+        <ul class="box">
+           <li class="link_name">Support</li>
+          <div class=" underline "><span></span>
+         </div>
+          <li><a href="https://mpiticounseling.co.in/">Admission</a></li>
+          <li><a href="https://drntruhs.in/mp-iti-admission/#google_vignette">Eligibility</a></li>
+          <li><a href="https://aissee.co.in/mp-iti-counselling/">Counselling</a></li>
+          <li><a href="https://www.ncvtmis.gov.in/pages/home.aspx">Dgt Mis Home</a></li>
+        </ul>
+        <ul class="box">
+          <li class="link_name">Courses</li>
+          <div class=" underline "><span></span>
+         </div>
+          <li><a href="https://www.getmyuni.com/articles/iti-copa-course#:~:text=COPA%20stands%20for%20Computer%20Operator,operations%2C%20internet%2C%20and%20programming.">Computer Operator's & Programing Assistence</a></li>
+          <li><a href="https://www.puranmurti.com/iti-electrician.php">Electrician</a></li>
+          <li><a href="https://collegedunia.com/courses/iti-motor-mechanic">Moter Mechanic</a></li>
+          <li><a href="https://www.getmyuni.com/articles/iti-welder-course#:~:text=The%20ITI%20welder%20course%20is,machinery%2C%20electricity%2C%20and%20techniques.">Welder</a></li>
+        </ul>
+        <ul class="box input-box">
+          
+          <li class="link_name">Subscribe</li>
+          <div class=" underline "><span></span>
+         </div>
+          
+           <form action="https://api.web3forms.com/submit" method="POST"
+      class="contact-left">
+       
+        
+      
+      <input type="hidden" name="access_key" value="b6015aaa-2055-4a65-806d-3213190bf37c">
+    
+    
+          
+          
+          
+         
+          <input type="text" name="email" placeholder="Enter your email" class="contact-inputs" required>
+          
+            <input  <button type="submit"></button>
+      
+       
+       
+        </form>
+      </div>
+    </div>
+    
+    <div class="bottom-details">
+      <div class="bottom_text">
+        <span class="copyright_text">Copyright © 2024 <a href="https://www.instagram.com/kartik.90x?igsh=b2JoeHZjMTdyNjZ3">Mr.kartik</a>All rights reserved</span>
+        <span class="policy_terms">
+          <a href="https://www.ncvtmis.gov.in/Pages/Terms.aspx">Privacy policy</a>
+          <a href="https://www.ncvtmis.gov.in/Pages/Terms.aspx">Terms & condition</a>
+        </span>
+      </div>
+    </div>
+  </footer>
+</section>
+ 
+      
+      
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+         
+
+  <script src="https://use.fontawesome.com/889e85f8b1.js"></script>
+
+<script>
+
+var navLinks = document.getElementById("navLinks")
+function showMenu(){
+  navLinks.style.right="0";
+}
+function hideMenu(){
+  navLinks.style.right="-200px";
+}
+
+  
+  
+  
+  
+   // Selecting all required elements
+const wrapper = document.querySelector(".wrapper"),
+toast = wrapper.querySelector(".toast"),
+title = toast.querySelector("span"),
+subTitle = toast.querySelector("p"),
+wifiIcon = toast.querySelector(".icon"),
+closeIcon = toast.querySelector(".close-icon");
+
+window.onload = ()=>{
+    function ajax(){
+        let xhr = new XMLHttpRequest(); //creating new XML object
+        xhr.open("GET", "https://jsonplaceholder.typicode.com/posts", true); //sending get request on this URL
+        xhr.onload = ()=>{ //once ajax loaded
+            //if ajax status is equal to 200 or less than 300 that mean user is getting data from that provided url
+            //or his/her response status is 200 that means he/she is online
+            if(xhr.status == 200 && xhr.status < 300){
+                toast.classList.remove("offline");
+                title.innerText = "You're online now";
+                subTitle.innerText = "Hurray! Internet is connected.";
+                wifiIcon.innerHTML = '<i class="uil uil-wifi"></i>';
+                closeIcon.onclick = ()=>{ //hide toast notification on close icon click
+                    wrapper.classList.add("hide");
+                }
+                setTimeout(()=>{ //hide the toast notification automatically after 5 seconds
+                    wrapper.classList.add("hide");
+                }, 5000);
+            }else{
+                offline(); //calling offline function if ajax status is not equal to 200 or not less that 300
+            }
+        }
+        xhr.onerror = ()=>{
+            offline(); ////calling offline function if the passed url is not correct or returning 404 or other error
+        }
+        xhr.send(); //sending get request to the passed url
+    }
+
+    function offline(){ //function for offline
+        wrapper.classList.remove("hide");
+        toast.classList.add("offline");
+        title.innerText = "You're offline now";
+        subTitle.innerText = "Opps! Internet is disconnected.";
+        wifiIcon.innerHTML = '<i class="uil uil-wifi-slash"></i>';
+    }
+
+    setInterval(()=>{ //this setInterval function call ajax frequently after 100ms
+        ajax();
+    }, 100);
+}  
+
+  
+  
+  
+  
+   
+   let slideIndex = 0;
+showSlides();
+
+// Next-previous control
+function nextSlide() {
+  slideIndex++;
+  showSlides();
+  timer = _timer; // reset timer
+}
+
+function prevSlide() {
+  slideIndex--;
+  showSlides();
+  timer = _timer;
+}
+
+// Thumbnail image controlls
+function currentSlide(n) {
+  slideIndex = n - 1;
+  showSlides();
+  timer = _timer;
+}
+
+function showSlides() {
+  let slides = document.querySelectorAll(".mySlides");
+  let dots = document.querySelectorAll(".dots");
+
+  if (slideIndex > slides.length - 1) slideIndex = 0;
+  if (slideIndex < 0) slideIndex = slides.length - 1;
+  
+  // hide all slides
+  slides.forEach((slide) => {
+    slide.style.display = "none";
+  });
+  
+  // show one slide base on index number
+  slides[slideIndex].style.display = "block";
+  
+  dots.forEach((dot) => {
+    dot.classList.remove("active");
+  });
+  
+  dots[slideIndex].classList.add("active");
+}
+
+// autoplay slides --------
+let timer = 7; // sec
+const _timer = timer;
+
+// this function runs every 1 second
+setInterval(() => {
+  timer--;
+
+  if (timer < 1) {
+    nextSlide();
+    timer = _timer; // reset timer
+  }
+}, 1000); // 1sec
+
+            
+            
+            
+            
+            const article = document.querySelectorAll(".article_expandable");
+article.forEach((story) => {
+  const button = story.querySelector(".article__accordion");
+  button.addEventListener("click", () => {
+    const paragraph = story.querySelector(".article__hidden-div");
+    paragraph.classList.toggle("hidden");
+    const text = paragraph.classList.contains("hidden")
+      ? "Read more..."
+      : "Read less...";
+    button.textContent = text;
+  });
+});
+
+  
+  
+  /**
+ *  Read More JS
+ *  Truncates text via specfied character length with more/less actions.
+ *  Maintains original format of pre truncated text.
+ *  @author stephen scaff
+ *  @todo   Add destroy method for ajaxed content support.
+ *
+ */
+ const ReadMore = (() => {
+   let s;
+
+   return {
+
+     settings() {
+       return {
+         content: document.querySelectorAll('.js-read-more'),
+         originalContentArr: [],
+         truncatedContentArr: [],
+         moreLink: "Read More",
+         lessLink: "Less Link",
+       }
+     },
+
+     init() {
+       s = this.settings();
+       this.bindEvents();
+     },
+
+     bindEvents() {
+       ReadMore.truncateText();
+     },
+
+     /**
+      * Count Words
+      * Helper to handle word count.
+      * @param {string} str - Target content string.
+      */
+     countWords(str) {
+       return str.split(/\s+/).length;
+     },
+
+     /**
+      * Ellpise Content
+      * @param {string} str - content string.
+      * @param {number} wordsNum - Number of words to show before truncation.
+      */
+     ellipseContent(str, wordsNum) {
+       return str.split(/\s+/).slice(0, wordsNum).join(' ') + '...';
+     },
+
+     /**
+      * Truncate Text
+      * Truncate and ellipses contented content
+      * based on specified word count.
+      * Calls createLink() and handleClick() methods.
+      */
+     truncateText() {
+
+       for (let i = 0; i < s.content.length; i++) {
+         //console.log(s.content)
+         const originalContent = s.content[i].innerHTML;
+         const numberOfWords = s.content[i].dataset.rmWords;
+         const truncateContent = ReadMore.ellipseContent(originalContent, numberOfWords);
+         const originalContentWords = ReadMore.countWords(originalContent);
+
+         s.originalContentArr.push(originalContent);
+         s.truncatedContentArr.push(truncateContent);
+
+         if (numberOfWords < originalContentWords) {
+           s.content[i].innerHTML = s.truncatedContentArr[i];
+           let self = i;
+           ReadMore.createLink(self)
+         }
+       }
+       ReadMore.handleClick(s.content);
+     },
+
+     /**
+      * Create Link
+      * Creates and Inserts Read More Link
+      * @param {number} index - index reference of looped item
+      */
+     createLink(index) {
+       const linkWrap = document.createElement('span');
+
+       linkWrap.className = 'read-more__link-wrap';
+
+       linkWrap.innerHTML = `<a id="read-more_${index}" class="read-more__link" style="cursor:pointer;">${s.moreLink}</a>`;
+
+       // Inset created link
+       s.content[index].parentNode.insertBefore(linkWrap, s.content[index].nextSibling);
+
+     },
+
+     /**
+      * Handle Click
+      * Toggle Click eve
+      */
+     handleClick(el) {
+       const readMoreLink = document.querySelectorAll('.read-more__link');
+
+       for (let j = 0, l = readMoreLink.length; j < l; j++) {
+
+         readMoreLink[j].addEventListener('click', function() {
+
+           const moreLinkID = this.getAttribute('id');
+           let index = moreLinkID.split('_')[1];
+
+           el[index].classList.toggle('is-expanded');
+
+           if (this.dataset.clicked !== 'true') {
+              el[index].innerHTML = s.originalContentArr[index];
+              this.innerHTML = s.lessLink;
+              this.dataset.clicked = true;
+           } else {
+             el[index].innerHTML = s.truncatedContentArr[index];
+             this.innerHTML = s.moreLink;
+             this.dataset.clicked = false;
+           }
+         });
+       }
+     },
+
+     /**
+      * Open All
+      * Method to expand all instances on the page.
+      */
+     openAll() {
+       const instances = document.querySelectorAll('.read-more__link');
+         for (let i = 0; i < instances.length; i++) {
+           content[i].innerHTML = s.truncatedContentArr[i];
+           instances[i].innerHTML = s.moreLink;
+         }
+       }
+     }
+ })();
+
+ReadMore.init()
+            
+            
+
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            const form = document.querySelector("form"),
+        nextBtn = form.querySelector(".nextBtn"),
+        backBtn = form.querySelector(".backBtn"),
+        allInput = form.querySelectorAll(".first input");
+
+
+nextBtn.addEventListener("click", ()=> {
+    allInput.forEach(input => {
+        if(input.value != ""){
+            form.classList.add('secActive');
+        }else{
+            form.classList.remove('secActive');
+        }
+    })
+})
+
+backBtn.addEventListener("click", () => form.classList.remove('secActive'));
+
+
+
+
+
+var AndraPradesh = ["Anantapur","Chittoor","East Godavari","Guntur","Kadapa","Krishna","Kurnool","Prakasam","Nellore","Srikakulam","Visakhapatnam","Vizianagaram","West Godavari"];
+var ArunachalPradesh = ["Anjaw","Changlang","Dibang Valley","East Kameng","East Siang","Kra Daadi","Kurung Kumey","Lohit","Longding","Lower Dibang Valley","Lower Subansiri","Namsai","Papum Pare","Siang","Tawang","Tirap","Upper Siang","Upper Subansiri","West Kameng","West Siang","Itanagar"];
+var Assam = ["Baksa","Barpeta","Biswanath","Bongaigaon","Cachar","Charaideo","Chirang","Darrang","Dhemaji","Dhubri","Dibrugarh","Goalpara","Golaghat","Hailakandi","Hojai","Jorhat","Kamrup Metropolitan","Kamrup (Rural)","Karbi Anglong","Karimganj","Kokrajhar","Lakhimpur","Majuli","Morigaon","Nagaon","Nalbari","Dima Hasao","Sivasagar","Sonitpur","South Salmara Mankachar","Tinsukia","Udalguri","West Karbi Anglong"];
+var Bihar = ["Araria","Arwal","Aurangabad","Banka","Begusarai","Bhagalpur","Bhojpur","Buxar","Darbhanga","East Champaran","Gaya","Gopalganj","Jamui","Jehanabad","Kaimur","Katihar","Khagaria","Kishanganj","Lakhisarai","Madhepura","Madhubani","Munger","Muzaffarpur","Nalanda","Nawada","Patna","Purnia","Rohtas","Saharsa","Samastipur","Saran","Sheikhpura","Sheohar","Sitamarhi","Siwan","Supaul","Vaishali","West Champaran"];
+var Chhattisgarh = ["Balod","Baloda Bazar","Balrampur","Bastar","Bemetara","Bijapur","Bilaspur","Dantewada","Dhamtari","Durg","Gariaband","Janjgir Champa","Jashpur","Kabirdham","Kanker","Kondagaon","Korba","Koriya","Mahasamund","Mungeli","Narayanpur","Raigarh","Raipur","Rajnandgaon","Sukma","Surajpur","Surguja"];
+var Goa = ["North Goa","South Goa"];
+var Gujarat = ["Ahmedabad","Amreli","Anand","Aravalli","Banaskantha","Bharuch","Bhavnagar","Botad","Chhota Udaipur","Dahod","Dang","Devbhoomi Dwarka","Gandhinagar","Gir Somnath","Jamnagar","Junagadh","Kheda","Kutch","Mahisagar","Mehsana","Morbi","Narmada","Navsari","Panchmahal","Patan","Porbandar","Rajkot","Sabarkantha","Surat","Surendranagar","Tapi","Vadodara","Valsad"];
+var Haryana = ["Ambala","Bhiwani","Charkhi Dadri","Faridabad","Fatehabad","Gurugram","Hisar","Jhajjar","Jind","Kaithal","Karnal","Kurukshetra","Mahendragarh","Mewat","Palwal","Panchkula","Panipat","Rewari","Rohtak","Sirsa","Sonipat","Yamunanagar"];
+var HimachalPradesh = ["Bilaspur","Chamba","Hamirpur","Kangra","Kinnaur","Kullu","Lahaul Spiti","Mandi","Shimla","Sirmaur","Solan","Una"];
+var JammuKashmir = ["Anantnag","Bandipora","Baramulla","Budgam","Doda","Ganderbal","Jammu","Kargil","Kathua","Kishtwar","Kulgam","Kupwara","Leh","Poonch","Pulwama","Rajouri","Ramban","Reasi","Samba","Shopian","Srinagar","Udhampur"];
+var Jharkhand = ["Bokaro","Chatra","Deoghar","Dhanbad","Dumka","East Singhbhum","Garhwa","Giridih","Godda","Gumla","Hazaribagh","Jamtara","Khunti","Koderma","Latehar","Lohardaga","Pakur","Palamu","Ramgarh","Ranchi","Sahebganj","Seraikela Kharsawan","Simdega","West Singhbhum"];
+var Karnataka = ["Bagalkot","Bangalore Rural","Bangalore Urban","Belgaum","Bellary","Bidar","Vijayapura","Chamarajanagar","Chikkaballapur","Chikkamagaluru","Chitradurga","Dakshina Kannada","Davanagere","Dharwad","Gadag","Gulbarga","Hassan","Haveri","Kodagu","Kolar","Koppal","Mandya","Mysore","Raichur","Ramanagara","Shimoga","Tumkur","Udupi","Uttara Kannada","Yadgir"];
+var Kerala = ["Alappuzha","Ernakulam","Idukki","Kannur","Kasaragod","Kollam","Kottayam","Kozhikode","Malappuram","Palakkad","Pathanamthitta","Thiruvananthapuram","Thrissur","Wayanad"];
+var MadhyaPradesh = ["Agar Malwa","Alirajpur","Anuppur","Ashoknagar","Balaghat","Barwani","Betul","Bhind","Bhopal","Burhanpur","Chhatarpur","Chhindwara","Damoh","Datia","Dewas","Dhar","Dindori","Guna","Gwalior","Harda","Hoshangabad","Indore","Jabalpur","Jhabua","Katni","Khandwa","Khargone","Mandla","Mandsaur","Morena","Narsinghpur","Neemuch","Panna","Raisen","Rajgarh","Ratlam","Rewa","Sagar","Satna",
+"Sehore","Seoni","Shahdol","Shajapur","Sheopur","Shivpuri","Sidhi","Singrauli","Tikamgarh","Ujjain","Umaria","Vidisha"];
+var Maharashtra = ["Ahmednagar","Akola","Amravati","Aurangabad","Beed","Bhandara","Buldhana","Chandrapur","Dhule","Gadchiroli","Gondia","Hingoli","Jalgaon","Jalna","Kolhapur","Latur","Mumbai City","Mumbai Suburban","Nagpur","Nanded","Nandurbar","Nashik","Osmanabad","Palghar","Parbhani","Pune","Raigad","Ratnagiri","Sangli","Satara","Sindhudurg","Solapur","Thane","Wardha","Washim","Yavatmal"];
+var Manipur = ["Bishnupur","Chandel","Churachandpur","Imphal East","Imphal West","Jiribam","Kakching","Kamjong","Kangpokpi","Noney","Pherzawl","Senapati","Tamenglong","Tengnoupal","Thoubal","Ukhrul"];
+var Meghalaya = ["East Garo Hills","East Jaintia Hills","East Khasi Hills","North Garo Hills","Ri Bhoi","South Garo Hills","South West Garo Hills","South West Khasi Hills","West Garo Hills","West Jaintia Hills","West Khasi Hills"];
+var Mizoram = ["Aizawl","Champhai","Kolasib","Lawngtlai","Lunglei","Mamit","Saiha","Serchhip","Aizawl","Champhai","Kolasib","Lawngtlai","Lunglei","Mamit","Saiha","Serchhip"];
+var Nagaland = ["Dimapur","Kiphire","Kohima","Longleng","Mokokchung","Mon","Peren","Phek","Tuensang","Wokha","Zunheboto"];
+var Odisha = ["Angul","Balangir","Balasore","Bargarh","Bhadrak","Boudh","Cuttack","Debagarh","Dhenkanal","Gajapati","Ganjam","Jagatsinghpur","Jajpur","Jharsuguda","Kalahandi","Kandhamal","Kendrapara","Kendujhar","Khordha","Koraput","Malkangiri","Mayurbhanj","Nabarangpur","Nayagarh","Nuapada","Puri","Rayagada","Sambalpur","Subarnapur","Sundergarh"];
+var Punjab = ["Amritsar","Barnala","Bathinda","Faridkot","Fatehgarh Sahib","Fazilka","Firozpur","Gurdaspur","Hoshiarpur","Jalandhar","Kapurthala","Ludhiana","Mansa","Moga","Mohali","Muktsar","Pathankot","Patiala","Rupnagar","Sangrur","Shaheed Bhagat Singh Nagar","Tarn Taran"];
+var Rajasthan = ["Ajmer","Alwar","Banswara","Baran","Barmer","Bharatpur","Bhilwara","Bikaner","Bundi","Chittorgarh","Churu","Dausa","Dholpur","Dungarpur","Ganganagar","Hanumangarh","Jaipur","Jaisalmer","Jalore","Jhalawar","Jhunjhunu","Jodhpur","Karauli","Kota","Nagaur","Pali","Pratapgarh","Rajsamand","Sawai Madhopur","Sikar","Sirohi","Tonk","Udaipur"];
+var Sikkim = ["East Sikkim","North Sikkim","South Sikkim","West Sikkim"];
+var TamilNadu = ["Ariyalur","Chennai","Coimbatore","Cuddalore","Dharmapuri","Dindigul","Erode","Kanchipuram","Kanyakumari","Karur","Krishnagiri","Madurai","Nagapattinam","Namakkal","Nilgiris","Perambalur","Pudukkottai","Ramanathapuram","Salem","Sivaganga","Thanjavur","Theni","Thoothukudi","Tiruchirappalli","Tirunelveli","Tiruppur","Tiruvallur","Tiruvannamalai","Tiruvarur","Vellore","Viluppuram","Virudhunagar"];
+var Telangana = ["Adilabad","Bhadradri Kothagudem","Hyderabad","Jagtial","Jangaon","Jayashankar","Jogulamba","Kamareddy","Karimnagar","Khammam","Komaram Bheem","Mahabubabad","Mahbubnagar","Mancherial","Medak","Medchal","Nagarkurnool","Nalgonda","Nirmal","Nizamabad","Peddapalli","Rajanna Sircilla","Ranga Reddy","Sangareddy","Siddipet","Suryapet","Vikarabad","Wanaparthy","Warangal Rural","Warangal Urban","Yadadri Bhuvanagiri"];
+var Tripura = ["Dhalai","Gomati","Khowai","North Tripura","Sepahijala","South Tripura","Unakoti","West Tripura"];
+var UttarPradesh = ["Agra","Aligarh","Allahabad","Ambedkar Nagar","Amethi","Amroha","Auraiya","Azamgarh","Baghpat","Bahraich","Ballia","Balrampur","Banda","Barabanki","Bareilly","Basti","Bhadohi","Bijnor","Budaun","Bulandshahr","Chandauli","Chitrakoot","Deoria","Etah","Etawah","Faizabad","Farrukhabad","Fatehpur","Firozabad","Gautam Buddha Nagar","Ghaziabad","Ghazipur","Gonda","Gorakhpur","Hamirpur","Hapur","Hardoi","Hathras","Jalaun","Jaunpur","Jhansi","Kannauj","Kanpur Dehat","Kanpur Nagar","Kasganj","Kaushambi","Kheri","Kushinagar","Lalitpur","Lucknow","Maharajganj","Mahoba","Mainpuri","Mathura","Mau","Meerut","Mirzapur","Moradabad","Muzaffarnagar","Pilibhit","Pratapgarh","Raebareli","Rampur","Saharanpur","Sambhal","Sant Kabir Nagar","Shahjahanpur","Shamli","Shravasti","Siddharthnagar","Sitapur","Sonbhadra","Sultanpur","Unnao","Varanasi"];
+var Uttarakhand  = ["Almora","Bageshwar","Chamoli","Champawat","Dehradun","Haridwar","Nainital","Pauri","Pithoragarh","Rudraprayag","Tehri","Udham Singh Nagar","Uttarkashi"];
+var WestBengal = ["Alipurduar","Bankura","Birbhum","Cooch Behar","Dakshin Dinajpur","Darjeeling","Hooghly","Howrah","Jalpaiguri","Jhargram","Kalimpong","Kolkata","Malda","Murshidabad","Nadia","North 24 Parganas","Paschim Bardhaman","Paschim Medinipur","Purba Bardhaman","Purba Medinipur","Purulia","South 24 Parganas","Uttar Dinajpur"];
+var AndamanNicobar = ["Nicobar","North Middle Andaman","South Andaman"];
+var Chandigarh = ["Chandigarh"];
+var DadraHaveli = ["Dadra Nagar Haveli"];
+var DamanDiu = ["Daman","Diu"];
+var Delhi = ["Central Delhi","East Delhi","New Delhi","North Delhi","North East Delhi","North West Delhi","Shahdara","South Delhi","South East Delhi","South West Delhi","West Delhi"];
+var Lakshadweep = ["Lakshadweep"];
+var Puducherry = ["Karaikal","Mahe","Puducherry","Yanam"];
+
+
+$("#inputState").change(function(){
+  var StateSelected = $(this).val();
+  var optionsList;
+  var htmlString = "";
+
+  switch (StateSelected) {
+    case "Andra Pradesh":
+        optionsList = AndraPradesh;
+        break;
+    case "Arunachal Pradesh":
+        optionsList = ArunachalPradesh;
+        break;
+    case "Assam":
+        optionsList = Assam;
+        break;
+    case "Bihar":
+        optionsList = Bihar;
+        break;
+    case "Chhattisgarh":
+        optionsList = Chhattisgarh;
+        break;
+    case "Goa":
+        optionsList = Goa;
+        break;
+    case  "Gujarat":
+        optionsList = Gujarat;
+        break;
+    case "Haryana":
+        optionsList = Haryana;
+        break;
+    case "Himachal Pradesh":
+        optionsList = HimachalPradesh;
+        break;
+    case "Jammu and Kashmir":
+        optionsList = JammuKashmir;
+        break;
+    case "Jharkhand":
+        optionsList = Jharkhand;
+        break;
+    case  "Karnataka":
+        optionsList = Karnataka;
+        break;
+    case "Kerala":
+        optionsList = Kerala;
+        break;
+    case  "Madya Pradesh":
+        optionsList = MadhyaPradesh;
+        break;
+    case "Maharashtra":
+        optionsList = Maharashtra;
+        break;
+    case  "Manipur":
+        optionsList = Manipur;
+        break;
+    case "Meghalaya":
+        optionsList = Meghalaya ;
+        break;
+    case  "Mizoram":
+        optionsList = Mizoram;
+        break;
+    case "Nagaland":
+        optionsList = Nagaland;
+        break;
+    case  "Orissa":
+        optionsList = Orissa;
+        break;
+    case "Punjab":
+        optionsList = Punjab;
+        break;
+    case  "Rajasthan":
+        optionsList = Rajasthan;
+        break;
+    case "Sikkim":
+        optionsList = Sikkim;
+        break;
+    case  "Tamil Nadu":
+        optionsList = TamilNadu;
+        break;
+    case  "Telangana":
+        optionsList = Telangana;
+        break;
+    case "Tripura":
+        optionsList = Tripura ;
+        break;
+    case  "Uttaranchal":
+        optionsList = Uttaranchal;
+        break;
+    case  "Uttar Pradesh":
+        optionsList = UttarPradesh;
+        break;
+    case "West Bengal":
+        optionsList = WestBengal;
+        break;
+    case  "Andaman and Nicobar Islands":
+        optionsList = AndamanNicobar;
+        break;
+    case "Chandigarh":
+        optionsList = Chandigarh;
+        break;
+    case  "Dadar and Nagar Haveli":
+        optionsList = DadraHaveli;
+        break;
+    case "Daman and Diu":
+        optionsList = DamanDiu;
+        break;
+    case  "Delhi":
+        optionsList = Delhi;
+        break;
+    case "Lakshadeep":
+        optionsList = Lakshadeep ;
+        break;
+    case  "Pondicherry":
+        optionsList = Pondicherry;
+        break;
+}
+
+
+  for(var i = 0; i < optionsList.length; i++){
+    htmlString = htmlString+"<option value='"+ optionsList[i] +"'>"+ optionsList[i] +"</option>";
+  }
+  $("#inputDistrict").html(htmlString);
+
+});
+
+            
+            
+            
+            
+            
+            
+            
+            
+             $(document).ready(function() {
+            $(".generate_qr").click(function() {
+                $(".form").hide();
+                $(".qr_code").show();
+                var num = $(".number").val();
+                var link = "upi://pay?pa=8951362952@paytm%26am=%26tn=" + num;
+                var upi = "https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=" + link;
+                console.log(upi);
+                $(".get_qr").attr("src", upi);
+            });
+            $(".download_now").click(function() {
+                var name = $(".name").val();
+                var num = $(".number").val();
+                var email = $(".email").val();
+                var id = $(".id").val();
+                if (num != "" && name != "" && email != "" && id != "") {
+                    /*$.post("back.php",{name:name,num:num,email:email,id:id},function(res) {
+                    	if(res==1){
+
+                    	}
+                    	else{
+
+                    	}
+                    });*/
+                } else {
+                    alert("Fill all fields correctly");
+                }
+            });
+        });
+    </script>
+  
+  
+
+</script>
+</body>
+
+</html>
